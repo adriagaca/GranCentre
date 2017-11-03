@@ -26,7 +26,7 @@ public class Business extends Activity {
                 Object item = adapterView.getItemAtPosition(i);
                 if(item== "Restaurants")
                 {
-                    Intent intent =new Intent(getApplicationContext(),Business_Restaurants.class);
+                    Intent intent =new Intent(getApplicationContext(),Business_Inmobiliaries.class);
                     startActivity(intent);
                 }
                 else if (item=="Perruqueries")
