@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.adri.projectegithub.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/fonsbusiness"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textseleccio"
+            android:text="Selecciona un sector d'empreses"
+            android:textColor="#FFFFFF"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"/>
+        <Spinner
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinnerfiltre"
+            android:layout_alignBaseline="@id/textseleccio"
+            android:layout_toRightOf="@id/textseleccio"
+            android:entries="@array/sectors"
+
+            >
+
+        </Spinner>
+    </RelativeLayout>
+
+</FrameLayout>
