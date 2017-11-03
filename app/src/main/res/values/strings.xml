@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">ProjecteGithub</string>
+    <string name="app_name">Gran Centre</string>
     <string-array name="sectors">
         <item>Selecciona</item>
         <item>Restaurants</item>
