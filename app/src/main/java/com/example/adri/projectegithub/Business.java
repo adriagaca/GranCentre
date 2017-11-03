@@ -8,7 +8,7 @@ import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
-public class Business extends Activity implements View.OnClickListener {
+public class Business extends Activity {
     Spinner spinnersectors = (Spinner)findViewById(R.id.spinnerfiltre);
     ArrayAdapter adapter = ArrayAdapter.createFromResource(this, R.array.sectors,android.R.layout.simple_spinner_item);
 
