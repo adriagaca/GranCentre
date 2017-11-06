@@ -16,11 +16,15 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Hotel"/>
+
+        <activity android:name=".Hotel" />
+        <activity android:name=".Activity_Restaurant">
         <activity android:name=".Business.Business" />
         <activity android:name=".Business.Business_Inmobiliaries" />
         <activity android:name=".Business.Business_Perruqueries" />
         <activity android:name=".Business.Business_Botigues"></activity>
+        </activity>
+
     </application>
 
 </manifest>
