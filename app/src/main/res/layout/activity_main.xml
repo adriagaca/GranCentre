@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
+    android:background="@drawable/fondo"
     tools:context="com.example.adri.projectegithub.MainActivity">
 
     <LinearLayout
@@ -19,8 +20,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.19"
             android:src="@drawable/restaurants"
-            android:layout_margin="10dp"
-            />
+            android:layout_margin="10dp"/>
 
         <ImageView
             android:id="@+id/imageView2"
