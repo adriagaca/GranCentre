@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -14,5 +15,9 @@ public class MainActivity extends AppCompatActivity {
     }
     public  void gotoresta(View v){
         startActivity(new Intent(this,Activity_Restaurant.class));
+    }
+    public void hotels (View v)
+    {
+        startActivity(new Intent(this,Hotel.class));
     }
 }
