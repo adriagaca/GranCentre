@@ -1,9 +1,185 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.adri.projectegithub.Business.Business_Botigues">
 
-</android.support.constraint.ConstraintLayout>
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Back"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/TitolBotigues"
+                android:text="BOTIGUES"
+                android:layout_toRightOf="@+id/Back"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="50dp"
+
+                android:textSize="30dp"/>
+            <ImageView
+                android:layout_below="@+id/Back"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/ImgBotiga1"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/LinkPrimeraBotiga"
+                android:text="Barbany Granollers"
+
+                android:layout_marginBottom="30dp"
+                android:layout_alignBottom="@+id/ImgBotiga1"
+                android:layout_toRightOf="@+id/ImgBotiga1"
+                android:layout_toEndOf="@+id/ImgBotiga1"
+                android:layout_marginLeft="28dp"
+                android:layout_marginStart="28dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/TlfBotiga1"
+                android:text="93-879-28-16"
+
+                android:layout_toRightOf="@+id/LinkPrimeraBotiga"
+                android:layout_alignBottom="@+id/LinkPrimeraBotiga"
+
+                android:layout_marginLeft="20dp"
+                />
+            <ImageView
+                android:layout_below="@+id/ImgBotiga1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/ImgBotiga2"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/LinkSegonaBotiga"
+                android:text="El Món"
+
+                android:layout_marginBottom="30dp"
+                android:layout_above="@+id/ImgBotiga3"
+                android:layout_alignLeft="@+id/LinkPrimeraBotiga"
+                android:layout_alignStart="@+id/LinkPrimeraBotiga" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/TlfBotiga2"
+                android:text="93-860-64-61"
+
+                android:layout_alignBaseline="@+id/LinkSegonaBotiga"
+                android:layout_alignBottom="@+id/LinkSegonaBotiga"
+                android:layout_alignLeft="@+id/TlfBotiga1"
+                android:layout_alignStart="@+id/TlfBotiga1" />
+            <ImageView
+                android:layout_below="@+id/ImgBotiga2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/ImgBotiga3"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/LinkTerceraBotiga"
+                android:text="Botiga La Perla"
+
+                android:layout_marginBottom="30dp"
+                android:layout_alignBottom="@+id/ImgBotiga3"
+                android:layout_toRightOf="@+id/ImgBotiga3"
+                android:layout_toEndOf="@+id/ImgBotiga3"
+                android:layout_marginLeft="28dp"
+                android:layout_marginStart="28dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/TlfBotiga3"
+                android:text="93-879-63-65"
+
+                android:layout_alignBaseline="@+id/LinkTerceraBotiga"
+                android:layout_alignBottom="@+id/LinkTerceraBotiga"
+                android:layout_alignLeft="@+id/TlfBotiga2"
+                android:layout_alignStart="@+id/TlfBotiga2" />
+            <ImageView
+                android:layout_below="@+id/ImgBotiga3"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/ImgBotiga4"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/LinkQuartaBotiga"
+                android:text="INTEcat"
+
+                android:layout_marginBottom="30dp"
+                android:layout_alignBottom="@+id/ImgBotiga4"
+                android:layout_toRightOf="@+id/ImgBotiga4"
+                android:layout_toEndOf="@+id/ImgBotiga4"
+                android:layout_marginLeft="28dp"
+                android:layout_marginStart="28dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/TlfBotiga4"
+                android:text="93-159-54-23"
+
+                android:layout_alignBaseline="@+id/LinkQuartaBotiga"
+                android:layout_alignBottom="@+id/LinkQuartaBotiga"
+                android:layout_alignLeft="@+id/TlfBotiga3"
+                android:layout_alignStart="@+id/TlfBotiga3" />
+            <ImageView
+                android:layout_below="@+id/ImgBotiga4"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:id="@+id/ImgBotiga5"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/LinkCinquenaBotiga"
+                android:text="Més que Mascotes"
+
+                android:layout_marginBottom="30dp"
+                android:layout_alignBottom="@+id/ImgBotiga5"
+                android:layout_toRightOf="@+id/ImgBotiga5"
+                android:layout_toEndOf="@+id/ImgBotiga5"
+                android:layout_marginLeft="28dp"
+                android:layout_marginStart="28dp" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/TlfBotiga5"
+                android:text="93-849-21-86"
+
+                android:layout_alignBaseline="@+id/LinkCinquenaBotiga"
+                android:layout_alignBottom="@+id/LinkCinquenaBotiga"
+                android:layout_alignLeft="@+id/TlfBotiga4"
+                android:layout_alignStart="@+id/TlfBotiga4" />
+        </RelativeLayout>
+    </ScrollView>
+</FrameLayout>
