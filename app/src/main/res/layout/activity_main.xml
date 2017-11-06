@@ -28,7 +28,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.19"
             app:srcCompat="@drawable/business"
-            android:layout_margin="10dp"/>
+            android:layout_margin="10dp"
+            />
+
     </LinearLayout>
 
 
