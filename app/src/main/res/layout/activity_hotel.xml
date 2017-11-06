@@ -48,15 +48,15 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    android:text="TextView"
-                    android:textAppearance="@style/TextAppearance.AppCompat.Title"
-                    tools:text="Valoracio : " />
+                    android:text="Valoracio: 0"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Title" />
             </LinearLayout>
             <RatingBar
                 android:id="@+id/ratingBar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1" />
+
         </LinearLayout>
 
     </LinearLayout>
