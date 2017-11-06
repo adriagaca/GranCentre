@@ -19,7 +19,8 @@
             android:layout_height="wrap_content"
             android:layout_weight="0.19"
             android:src="@drawable/restaurants"
-            android:layout_margin="10dp"/>
+            android:layout_margin="10dp"
+            />
 
         <ImageView
             android:id="@+id/imageView2"
