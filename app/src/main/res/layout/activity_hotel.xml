@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.adri.projectegithub.Hotel"
+    android:background="@color/fonsHotel"
     android:orientation="vertical">
 
     <LinearLayout
@@ -16,8 +17,8 @@
 
         <ImageView
             android:id="@+id/imageView7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:layout_weight="1"
             app:srcCompat="@drawable/casafondaeuropa" />
         <LinearLayout
@@ -34,28 +35,32 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
-                    app:srcCompat="@drawable/webico" />
+                    app:srcCompat="@drawable/webico"
+                    android:layout_margin="5dp"/>
 
                 <ImageView
                     android:id="@+id/imageView9"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_weight="0"
+                    android:layout_margin="5dp"
                     app:srcCompat="@drawable/tlfico" />
 
                 <TextView
                     android:id="@+id/textView"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_width="122dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0"
                     android:text="Valoracio: 0"
                     android:textAppearance="@style/TextAppearance.AppCompat.Title" />
             </LinearLayout>
+
             <RatingBar
                 android:id="@+id/ratingBar"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_weight="1" />
+                android:layout_weight="1"
+                android:isIndicator="false" />
 
         </LinearLayout>
 

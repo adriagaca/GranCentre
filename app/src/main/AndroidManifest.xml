@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".Business" />
         <activity android:name=".Hotel" />
-        <activity android:name=".Activity_Restaurant"></activity>
+        <activity android:name=".Activity_Restaurant" />
+        <activity android:name=".menu_hotels"></activity>
     </application>
 
 </manifest>
