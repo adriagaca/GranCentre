@@ -25,7 +25,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/TitolInmobiliaries"
-                android:text="INMOBILIARIES"
+                android:text="INMOBILIARIE"
                 android:layout_toRightOf="@+id/Back"
                 android:layout_marginTop="8dp"
                 android:layout_marginLeft="50dp"
