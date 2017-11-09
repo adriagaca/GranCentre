@@ -15,7 +15,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:src="@drawable/rest_el_celler_de_jabugo"
+            android:src="@drawable/casafondaeuropa"
             />
         <LinearLayout
             android:layout_width="wrap_content"
