@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/GranCentre.iml" filepath="$PROJECT_DIR$/.idea/GranCentre.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ProjecteGithub.iml" filepath="$PROJECT_DIR$/ProjecteGithub.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
     </modules>
   </component>
