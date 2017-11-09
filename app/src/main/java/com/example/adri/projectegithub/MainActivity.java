@@ -6,6 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
 
+import com.example.adri.projectegithub.Business.Business;
+import com.example.adri.projectegithub.Business.Business_Perruqueries;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -18,6 +21,13 @@ public class MainActivity extends AppCompatActivity {
     }
     public void hotels (View v)
     {
-        startActivity(new Intent(this,Hotel.class));
+        startActivity(new Intent(this,Business_Perruqueries.class));
+    }
+
+    public  void gotobusiness(View v){
+
+        Intent hola = new Intent(this,Business.class);
+        startActivity(hola);
+
     }
 }

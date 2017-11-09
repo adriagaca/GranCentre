@@ -1,6 +1,8 @@
 package com.example.adri.projectegithub.Business;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.net.Uri;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -29,6 +31,61 @@ public class Business_Perruqueries extends Activity implements View.OnClickListe
 
     @Override
     public void onClick(View view) {
+        if(view==Link1)
+        {
+            Intent intent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse("https//:www.google.es"));
+            startActivity(intent);
+        }
+        else if (view==Link2)
+        {
+            Intent intent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse("https//:www.google.es"));
+            startActivity(intent);
+        }
+        else if (view==Link3)
+        {
+            Intent intent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse("https//:www.google.es"));
+            startActivity(intent);
+        }
+        else if (view==Link4)
+        {
+            Intent intent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse("https//:www.google.es"));
+            startActivity(intent);
+        }
+        else if (view==Link5)
+        {
+            Intent intent = new Intent(android.content.Intent.ACTION_VIEW, Uri.parse("https//:www.google.es"));
+            startActivity(intent);
+        }
+        else if (view==Tlf1)
+        {
+            Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tlf:+34900000000"));
+            startActivity(intent);
+        }
+        else if (view==Tlf2)
+        {
+            Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tlf:+34900000000"));
+            startActivity(intent);
+        }
+        else if (view==Tlf3)
+        {
+            Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tlf:+34900000000"));
+            startActivity(intent);
+        }
+        else if (view==Tlf4)
+        {
+            Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tlf:+34900000000"));
+            startActivity(intent);
+        }
+        else if (view==Tlf5)
+        {
+            Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse("tlf:+34900000000"));
+            startActivity(intent);
+        }
+        else if (view==Back)
+        {
+            Intent intent =new Intent(getApplicationContext(),Business.class);
+            startActivity(intent);
+        }
 
     }
 }
