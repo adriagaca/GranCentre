@@ -52,8 +52,8 @@ public class Hotel extends AppCompatActivity implements View.OnClickListener
     {
         switch (v.getId())
         {
-            case R.id.imageView10: Uri uriUrl = Uri.parse("www.fondaeuropa.eu");
-                Intent intent = new Intent(Intent.ACTION_VIEW, uriUrl);//aixo no funciona demanar a la eva com coñ es fa
+            case R.id.imageView10: Uri uriUrl = Uri.parse("http://www.fondaeuropa.eu");
+                Intent intent = new Intent(Intent.ACTION_VIEW, uriUrl);
                 startActivity(intent);
                 break;
             /*case R.id.imageView9: Uri uriUrl = Uri.parse("www.fondaeuropa.eu");
