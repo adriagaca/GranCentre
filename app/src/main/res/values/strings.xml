@@ -6,4 +6,12 @@
         <item>Perruqueries</item>
         <item>Botigues</item>
     </string-array>
+    <string-array name="estrelles">
+        <item>Selecciona el numero d\'estrelles</item>
+        <item>1 Estrella</item>
+        <item>2 Estrelles</item>
+        <item>3 Estrelles</item>
+        <item>4 Estrelles</item>
+        <item>5 Estrelles</item>
+    </string-array>
 </resources>

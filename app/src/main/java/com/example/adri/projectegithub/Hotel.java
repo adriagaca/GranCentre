@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.RatingBar;
+import android.widget.Spinner;
 import android.widget.TextView;
 
 public class Hotel extends AppCompatActivity implements View.OnClickListener
@@ -15,6 +16,7 @@ public class Hotel extends AppCompatActivity implements View.OnClickListener
     private RatingBar ratingBar;
     private TextView txtRatingValue;
     public ImageView web1, telefon1;
+    public Spinner spinner;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -27,6 +29,8 @@ public class Hotel extends AppCompatActivity implements View.OnClickListener
         web1.setOnClickListener(this);
         telefon1 = (ImageView) findViewById(R.id.imageView9);
         telefon1.setOnClickListener(this);
+        spinner = (Spinner) findViewById(R.id.spinner2);
+        //spinner.getOnItemSelectedListener(R.array.estrelles);
 
     }
 
