@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.adri.projectegithub.Movies">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/fonsbusiness"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/Back"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/back" />
+
+        <TextView
+            android:id="@+id/titolmovies"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/Back"
+            android:layout_marginLeft="30dp"
+            android:layout_toRightOf="@+id/Back"
+            android:text="PELICULES D'ESTRENA"
+            android:textSize="25dp" />
+
+        <TextView
+            android:id="@+id/titolmovie1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/titolmovie2"
+            android:layout_alignStart="@+id/titolmovie2"
+            android:layout_below="@+id/Back"
+            android:layout_marginTop="64dp"
+            android:text="Blade Runner 2049" />
+
+        <ImageView
+            android:id="@+id/imgmovie1"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_below="@+id/titolmovies"
+            android:layout_marginLeft="42dp"
+            android:layout_marginStart="42dp"
+            android:layout_marginTop="24dp"
+            android:layout_toEndOf="@+id/titolmovie1"
+            android:layout_toRightOf="@+id/titolmovie1"
+            android:scaleType="fitXY"
+            android:src="@drawable/imgmovie1" />
+
+        <TextView
+            android:id="@+id/titolmovie2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imgmovie2"
+            android:layout_alignLeft="@+id/titolmovie3"
+            android:layout_alignStart="@+id/titolmovie3"
+            android:layout_marginBottom="39dp"
+            android:text="Tadeo Jones 2" />
+
+        <ImageView
+            android:id="@+id/imgmovie2"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_alignLeft="@+id/imgmovie1"
+            android:layout_alignStart="@+id/imgmovie1"
+            android:layout_below="@+id/imgmovie1"
+            android:layout_marginTop="19dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/imgmovie2" />
+
+        <TextView
+            android:id="@+id/titolmovie3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/titolmovie4"
+            android:layout_alignStart="@+id/titolmovie4"
+            android:layout_alignTop="@+id/imgmovie3"
+            android:layout_marginTop="35dp"
+            android:text="Thor Ragnarok" />
+
+        <ImageView
+            android:id="@+id/imgmovie3"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_alignLeft="@+id/imgmovie2"
+            android:layout_alignStart="@+id/imgmovie2"
+            android:layout_below="@+id/imgmovie2"
+            android:layout_marginTop="25dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/imgmovie3" />
+
+        <TextView
+            android:id="@+id/titolmovie4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/Back"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/Back"
+            android:layout_marginBottom="65dp"
+            android:text="Star Wars Last Jedi" />
+
+        <ImageView
+            android:id="@+id/imgmovie4"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_alignLeft="@+id/imgmovie3"
+            android:layout_alignStart="@+id/imgmovie3"
+            android:layout_below="@+id/imgmovie3"
+            android:layout_marginTop="13dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/imgmovie4" />
+
+
+    </RelativeLayout>
+
+
+</FrameLayout>

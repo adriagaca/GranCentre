@@ -2,7 +2,7 @@
     <string name="app_name">Gran Centre</string>
     <string-array name="sectors">
         <item>Selecciona</item>
-        <item>Restaurants</item>
+        <item>Inmobiliaries</item>
         <item>Perruqueries</item>
         <item>Botigues</item>
     </string-array>

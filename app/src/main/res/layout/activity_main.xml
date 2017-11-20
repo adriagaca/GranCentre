@@ -28,7 +28,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.19"
-            app:srcCompat="@drawable/business"
+            android:src="@drawable/business"
+            android:onClick="gotobusiness"
             android:layout_margin="10dp"
             />
 
@@ -45,7 +46,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.19"
-            app:srcCompat="@drawable/movies"
+            android:src="@drawable/movies"
+            android:onClick="gotomovies"
             android:layout_margin="10dp"/>
 
         <ImageView

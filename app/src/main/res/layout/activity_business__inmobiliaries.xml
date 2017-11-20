@@ -8,7 +8,9 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/fonsinmobiliaries"/>
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -16,170 +18,251 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
+
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/Back"/>
+                android:id="@+id/Back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/back"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"/>
+
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:id="@+id/TitolInmobiliaries"
-                android:text="INMOBILIARIE"
-                android:layout_toRightOf="@+id/Back"
-                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="50dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/Back"
+                android:text="INMOBILIARIES"
+                android:textSize="30dp" />
 
-                android:textSize="30dp"/>
             <ImageView
+                android:id="@+id/ImgInmobiliaria1"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
                 android:layout_below="@+id/Back"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
-                android:id="@+id/ImgInmo1"
+                android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
-                android:layout_marginLeft="20dp"
-                />
+                android:scaleType="fitXY"
+                android:src="@drawable/barbany" />
             <TextView
+                android:id="@+id/NomInmobiliaria1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/LinkPrimeraInmo"
-                android:text="Barbany Granollers"
+                android:text="Barbany"
+                android:layout_below="@id/ImgInmobiliaria1"
+                android:layout_alignLeft="@id/ImgInmobiliaria1"/>
 
-                android:layout_marginBottom="30dp"
-                android:layout_alignBottom="@+id/ImgInmo1"
-                android:layout_toRightOf="@+id/ImgInmo1"
-                android:layout_toEndOf="@+id/ImgInmo1"
+            <ImageView
+                android:id="@+id/LinkPrimeraInmobiliaria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/ImgInmobiliaria1"
+                android:layout_marginBottom="15dp"
                 android:layout_marginLeft="28dp"
-                android:layout_marginStart="28dp" />
-            <TextView
+                android:layout_toRightOf="@+id/ImgInmobiliaria1"
+                android:src="@drawable/webico"/>
+
+            <ImageView
+                android:id="@+id/TlfInmobiliaria1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/TlfInmo1"
-                android:text="93-879-28-16"
-
-                android:layout_toRightOf="@+id/LinkPrimeraInmo"
-                android:layout_alignBottom="@+id/LinkPrimeraInmo"
-
+                android:layout_alignBottom="@+id/LinkPrimeraInmobiliaria"
                 android:layout_marginLeft="20dp"
-                />
+                android:layout_toRightOf="@+id/LinkPrimeraInmobiliaria"
+                android:src="@drawable/tlfico"/>
             <ImageView
-                android:layout_below="@+id/ImgInmo1"
+                android:id="@+id/iubi1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_alignBottom="@id/TlfInmobiliaria1"
+                android:layout_toRightOf="@id/TlfInmobiliaria1"
+                android:src="@drawable/icoubi"/>
+
+            <ImageView
+                android:id="@+id/ImgInmobiliaria2"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:id="@+id/ImgInmo2"
+                android:layout_below="@+id/NomInmobiliaria1"
+                android:layout_marginLeft="20dp"
                 android:layout_marginTop="10dp"
-                android:layout_marginLeft="20dp"
-                />
+                android:scaleType="fitXY"
+                android:src="@drawable/elmon" />
             <TextView
+                android:id="@+id/NomInmobiliaria2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/LinkSegonaInmo"
-                android:text="El Món"
+                android:text="El Mon"
+                android:layout_below="@id/ImgInmobiliaria2"
+                android:layout_alignLeft="@id/ImgInmobiliaria2"/>
 
-                android:layout_marginBottom="30dp"
-                android:layout_above="@+id/ImgInmo3"
-                android:layout_alignLeft="@+id/LinkPrimeraInmo"
-                android:layout_alignStart="@+id/LinkPrimeraInmo" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/TlfInmo2"
-                android:text="93-860-64-61"
-
-                android:layout_alignBaseline="@+id/LinkSegonaInmo"
-                android:layout_alignBottom="@+id/LinkSegonaInmo"
-                android:layout_alignLeft="@+id/TlfInmo1"
-                android:layout_alignStart="@+id/TlfInmo1" />
             <ImageView
-                android:layout_below="@+id/ImgInmo2"
+                android:id="@+id/LinkSegonaInmobiliaria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/ImgInmobiliaria2"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="28dp"
+                android:layout_toRightOf="@+id/ImgInmobiliaria2"
+                android:src="@drawable/webico"/>
+
+            <ImageView
+                android:id="@+id/TlfInmobiliaria2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/LinkSegonaInmobiliaria"
+
+                android:layout_alignBottom="@+id/LinkSegonaInmobiliaria"
+                android:layout_alignLeft="@+id/TlfInmobiliaria1"
+                android:layout_alignStart="@+id/TlfInmobiliaria1"
+                android:src="@drawable/tlfico" />
+            <ImageView
+                android:id="@+id/iubi2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_alignBottom="@id/TlfInmobiliaria2"
+                android:layout_toRightOf="@id/TlfInmobiliaria2"
+                android:src="@drawable/icoubi"/>
+
+            <ImageView
+                android:id="@+id/ImgInmobiliaria3"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:id="@+id/ImgInmo3"
+                android:layout_below="@+id/NomInmobiliaria2"
+                android:layout_marginLeft="20dp"
                 android:layout_marginTop="20dp"
-                android:layout_marginLeft="20dp"
-                />
+                android:scaleType="fitXY"
+                android:src="@drawable/laperla" />
             <TextView
+                android:id="@+id/NomInmobiliaria3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/LinkTerceraInmo"
-                android:text="Botiga La Perla"
+                android:text="La Perla"
+                android:layout_below="@id/ImgInmobiliaria3"
+                android:layout_alignLeft="@id/ImgInmobiliaria3"/>
 
-                android:layout_marginBottom="30dp"
-                android:layout_alignBottom="@+id/ImgInmo3"
-                android:layout_toRightOf="@+id/ImgInmo3"
-                android:layout_toEndOf="@+id/ImgInmo3"
-                android:layout_marginLeft="28dp"
-                android:layout_marginStart="28dp" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/TlfInmo3"
-                android:text="93-879-63-65"
-
-                android:layout_alignBaseline="@+id/LinkTerceraInmo"
-                android:layout_alignBottom="@+id/LinkTerceraInmo"
-                android:layout_alignLeft="@+id/TlfInmo2"
-                android:layout_alignStart="@+id/TlfInmo2" />
             <ImageView
-                android:layout_below="@+id/ImgInmo3"
+                android:id="@+id/LinkTerceraInmobiliaria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/ImgInmobiliaria3"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="28dp"
+                android:layout_toRightOf="@+id/ImgInmobiliaria3"
+                android:src="@drawable/webico"/>
+
+            <ImageView
+                android:id="@+id/TlfInmobiliaria3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/LinkTerceraInmobiliaria"
+
+                android:layout_alignBottom="@+id/LinkTerceraInmobiliaria"
+                android:layout_alignLeft="@+id/TlfInmobiliaria2"
+                android:layout_alignStart="@+id/TlfInmobiliaria2"
+                android:src="@drawable/tlfico" />
+            <ImageView
+                android:id="@+id/iubi3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_alignBottom="@id/TlfInmobiliaria3"
+                android:layout_toRightOf="@id/TlfInmobiliaria3"
+                android:src="@drawable/icoubi"/>
+
+            <ImageView
+                android:id="@+id/ImgInmobiliaria4"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:id="@+id/ImgInmo4"
-                android:layout_marginTop="10dp"
+                android:layout_below="@+id/NomInmobiliaria3"
                 android:layout_marginLeft="20dp"
-                />
+                android:layout_marginTop="10dp"
+                android:src="@drawable/intecat" />
             <TextView
+                android:id="@+id/NomInmobiliaria4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/LinkQuartaInmo"
                 android:text="INTEcat"
+                android:layout_below="@id/ImgInmobiliaria4"
+                android:layout_alignLeft="@id/ImgInmobiliaria4"/>
 
-                android:layout_marginBottom="30dp"
-                android:layout_alignBottom="@+id/ImgInmo4"
-                android:layout_toRightOf="@+id/ImgInmo4"
-                android:layout_toEndOf="@+id/ImgInmo4"
-                android:layout_marginLeft="28dp"
-                android:layout_marginStart="28dp" />
-            <TextView
+            <ImageView
+                android:id="@+id/LinkQuartaInmobiliaria"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/TlfInmo4"
-                android:text="93-159-54-23"
+                android:layout_alignBottom="@+id/ImgInmobiliaria4"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="28dp"
+                android:layout_toRightOf="@+id/ImgInmobiliaria4"
+                android:src="@drawable/webico"/>
 
-                android:layout_alignBaseline="@+id/LinkQuartaInmo"
-                android:layout_alignBottom="@+id/LinkQuartaInmo"
-                android:layout_alignLeft="@+id/TlfInmo3"
-                android:layout_alignStart="@+id/TlfInmo3" />
             <ImageView
-                android:layout_below="@+id/ImgInmo4"
+                android:id="@+id/TlfInmobiliaria4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/LinkQuartaInmobiliaria"
+
+                android:layout_alignBottom="@+id/LinkQuartaInmobiliaria"
+                android:layout_alignLeft="@+id/TlfInmobiliaria3"
+                android:layout_alignStart="@+id/TlfInmobiliaria3"
+                android:src="@drawable/tlfico" />
+
+            <ImageView
+                android:id="@+id/ImgInmobiliaria5"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:id="@+id/ImgInmo5"
-                android:layout_marginTop="20dp"
+                android:layout_below="@+id/NomInmobiliaria4"
                 android:layout_marginLeft="20dp"
-                />
+                android:layout_marginTop="20dp"
+                android:src="@drawable/mqm" />
+            <ImageView
+                android:id="@+id/iubi4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_alignBottom="@id/TlfInmobiliaria4"
+                android:layout_toRightOf="@id/TlfInmobiliaria4"
+                android:src="@drawable/icoubi"/>
             <TextView
+                android:id="@+id/NomInmobiliaria5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/LinkCinquenaInmo"
-                android:text="Més que Mascotes"
+                android:text="Mes que mascotes"
+                android:layout_below="@id/ImgInmobiliaria5"
+                android:layout_alignLeft="@id/ImgInmobiliaria5"/>
 
-                android:layout_marginBottom="30dp"
-                android:layout_alignBottom="@+id/ImgInmo5"
-                android:layout_toRightOf="@+id/ImgInmo5"
-                android:layout_toEndOf="@+id/ImgInmo5"
+            <ImageView
+                android:id="@+id/LinkCinquenaInmobiliaria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/ImgInmobiliaria5"
+                android:layout_marginBottom="15dp"
                 android:layout_marginLeft="28dp"
-                android:layout_marginStart="28dp" />
-            <TextView
+                android:layout_toRightOf="@+id/ImgInmobiliaria5"
+                android:src="@drawable/webico"/>
+
+            <ImageView
+                android:id="@+id/TlfInmobiliaria5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/TlfInmo5"
-                android:text="93-849-21-86"
+                android:layout_alignBaseline="@+id/LinkCinquenaInmobiliaria"
 
-                android:layout_alignBaseline="@+id/LinkCinquenaInmo"
-                android:layout_alignBottom="@+id/LinkCinquenaInmo"
-                android:layout_alignLeft="@+id/TlfInmo4"
-                android:layout_alignStart="@+id/TlfInmo4" />
+                android:layout_alignBottom="@+id/LinkCinquenaInmobiliaria"
+                android:layout_alignLeft="@+id/TlfInmobiliaria4"
+                android:layout_alignStart="@+id/TlfInmobiliaria4"
+                android:src="@drawable/tlfico" />
+            <ImageView
+                android:id="@+id/iubi5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_alignBottom="@id/TlfInmobiliaria5"
+                android:layout_toRightOf="@id/TlfInmobiliaria5"
+                android:src="@drawable/icoubi"/>
         </RelativeLayout>
     </ScrollView>
 </FrameLayout>

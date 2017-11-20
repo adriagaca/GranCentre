@@ -30,4 +30,10 @@ public class MainActivity extends AppCompatActivity {
         startActivity(hola);
 
     }
+    public  void gotomovies(View v){
+
+        Intent hola = new Intent(this,Movies.class);
+        startActivity(hola);
+
+    }
 }

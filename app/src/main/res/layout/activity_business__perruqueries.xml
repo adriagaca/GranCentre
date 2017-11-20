@@ -9,7 +9,8 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/fonsbusiness"/>
+        android:scaleType="fitXY"
+        android:src="@drawable/fonsperruqueries"/>
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -17,171 +18,251 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
+            android:layout_height="wrap_content">
+
             <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/Back"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/back"
+                android:layout_marginTop="5dp"
+                android:layout_marginLeft="5dp"/>
 
-                android:id="@+id/Back"/>
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
                 android:id="@+id/TitolPerruqueries"
-                android:text="PERRUQUERIES"
-                android:layout_toRightOf="@+id/Back"
-                android:layout_marginTop="8dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_marginLeft="50dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/Back"
+                android:text="PERRUQUERIES"
+                android:textSize="30dp" />
 
-                android:textSize="30dp"/>
             <ImageView
-                android:layout_below="@+id/Back"
-                android:layout_width="80dp"
-                android:layout_height="80dp"
                 android:id="@+id/ImgPerruqueria1"
-                android:layout_marginTop="20dp"
-                android:layout_marginLeft="20dp"
-                />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/LinkPrimeraPerruqueria"
-                android:text="Barbany Granollers"
-
-                android:layout_marginBottom="30dp"
-                android:layout_alignBottom="@+id/ImgPerruqueria1"
-                android:layout_toRightOf="@+id/ImgPerruqueria1"
-                android:layout_toEndOf="@+id/ImgPerruqueria1"
-                android:layout_marginLeft="28dp"
-                android:layout_marginStart="28dp" />
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:id="@+id/TlfPerruqueria1"
-                android:text="93-879-28-16"
-
-                android:layout_toRightOf="@+id/LinkPrimeraPerruqueria"
-                android:layout_alignBottom="@+id/LinkPrimeraPerruqueria"
-
-                android:layout_marginLeft="20dp"
-                />
-            <ImageView
-                android:layout_below="@+id/ImgPerruqueria1"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:id="@+id/ImgPerruqueria2"
-                android:layout_marginTop="10dp"
+                android:layout_below="@+id/Back"
                 android:layout_marginLeft="20dp"
-                />
+                android:layout_marginTop="20dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/perru_mogas" />
             <TextView
+                android:id="@+id/NomPerruqueria1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="Barbany"
+                android:layout_below="@id/ImgPerruqueria1"
+                android:layout_alignLeft="@id/ImgPerruqueria1"/>
+
+            <ImageView
+                android:id="@+id/LinkPrimeraPerruqueria"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/ImgPerruqueria1"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="28dp"
+                android:layout_toRightOf="@+id/ImgPerruqueria1"
+                android:src="@drawable/webico"/>
+
+            <ImageView
+                android:id="@+id/TlfPerruqueria1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/LinkPrimeraPerruqueria"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@+id/LinkPrimeraPerruqueria"
+                android:src="@drawable/tlfico"/>
+            <ImageView
+                android:id="@+id/pubi1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_alignBottom="@id/TlfPerruqueria1"
+                android:layout_toRightOf="@id/TlfPerruqueria1"
+                android:src="@drawable/icoubi"/>
+
+            <ImageView
+                android:id="@+id/ImgPerruqueria2"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_below="@+id/NomPerruqueria1"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="10dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/perru_ganzo" />
+            <TextView
+                android:id="@+id/NomPerruqueria2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="El Mon"
+                android:layout_below="@id/ImgPerruqueria2"
+                android:layout_alignLeft="@id/ImgPerruqueria2"/>
+
+            <ImageView
                 android:id="@+id/LinkSegonaPerruqueria"
-                android:text="El Món"
-
-                android:layout_marginBottom="30dp"
-                android:layout_above="@+id/ImgPerruqueria1"
-                android:layout_alignLeft="@+id/LinkPrimeraPerruqueria"
-                android:layout_alignStart="@+id/LinkPrimeraPerruqueria" />
-            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/TlfPerruqueria2"
-                android:text="93-860-64-61"
+                android:layout_alignBottom="@+id/ImgPerruqueria2"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="28dp"
+                android:layout_toRightOf="@+id/ImgPerruqueria2"
+                android:src="@drawable/webico"/>
 
+            <ImageView
+                android:id="@+id/TlfPerruqueria2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_alignBaseline="@+id/LinkSegonaPerruqueria"
+
                 android:layout_alignBottom="@+id/LinkSegonaPerruqueria"
                 android:layout_alignLeft="@+id/TlfPerruqueria1"
-                android:layout_alignStart="@+id/TlfPerruqueria1" />
+                android:layout_alignStart="@+id/TlfPerruqueria1"
+                android:src="@drawable/tlfico" />
             <ImageView
-                android:layout_below="@+id/ImgPerruqueria2"
+                android:id="@+id/pubi2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_alignBottom="@id/TlfPerruqueria2"
+                android:layout_toRightOf="@id/TlfPerruqueria2"
+                android:src="@drawable/icoubi"/>
+
+            <ImageView
+                android:id="@+id/ImgPerruqueria3"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:id="@+id/ImgPerruqueria3"
-                android:layout_marginTop="20dp"
+                android:layout_below="@+id/NomPerruqueria2"
                 android:layout_marginLeft="20dp"
-                />
+                android:layout_marginTop="20dp"
+                android:scaleType="fitXY"
+                android:src="@drawable/perru_margaret" />
             <TextView
+                android:id="@+id/NomPerruqueria3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="La Perla"
+                android:layout_below="@id/ImgPerruqueria3"
+                android:layout_alignLeft="@id/ImgPerruqueria3"/>
+
+            <ImageView
                 android:id="@+id/LinkTerceraPerruqueria"
-                android:text="Perruqueria La Perla"
-
-                android:layout_marginBottom="30dp"
-                android:layout_alignBottom="@+id/ImgPerruqueria3"
-                android:layout_toRightOf="@+id/ImgPerruqueria3"
-                android:layout_toEndOf="@+id/ImgPerruqueria3"
-                android:layout_marginLeft="28dp"
-                android:layout_marginStart="28dp" />
-            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/TlfPerruqueria3"
-                android:text="93-879-63-65"
+                android:layout_alignBottom="@+id/ImgPerruqueria3"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="28dp"
+                android:layout_toRightOf="@+id/ImgPerruqueria3"
+                android:src="@drawable/webico"/>
 
+            <ImageView
+                android:id="@+id/TlfPerruqueria3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_alignBaseline="@+id/LinkTerceraPerruqueria"
+
                 android:layout_alignBottom="@+id/LinkTerceraPerruqueria"
                 android:layout_alignLeft="@+id/TlfPerruqueria2"
-                android:layout_alignStart="@+id/TlfPerruqueria2" />
+                android:layout_alignStart="@+id/TlfPerruqueria2"
+                android:src="@drawable/tlfico" />
             <ImageView
-                android:layout_below="@+id/ImgPerruqueria3"
+                android:id="@+id/pubi3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_alignBottom="@id/TlfPerruqueria3"
+                android:layout_toRightOf="@id/TlfPerruqueria3"
+                android:src="@drawable/icoubi"/>
+
+            <ImageView
+                android:id="@+id/ImgPerruqueria4"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:id="@+id/ImgPerruqueria4"
-                android:layout_marginTop="10dp"
+                android:layout_below="@+id/NomPerruqueria3"
                 android:layout_marginLeft="20dp"
-                />
+                android:layout_marginTop="10dp"
+                android:src="@drawable/perru_sol" />
             <TextView
+                android:id="@+id/NomPerruqueria4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/LinkQuartaPerruqueria"
                 android:text="INTEcat"
+                android:layout_below="@id/ImgPerruqueria4"
+                android:layout_alignLeft="@id/ImgPerruqueria4"/>
 
-                android:layout_marginBottom="30dp"
-                android:layout_alignBottom="@+id/ImgPerruqueria4"
-                android:layout_toRightOf="@+id/ImgPerruqueria4"
-                android:layout_toEndOf="@+id/ImgPerruqueria4"
-                android:layout_marginLeft="28dp"
-                android:layout_marginStart="28dp" />
-            <TextView
+            <ImageView
+                android:id="@+id/LinkQuartaPerruqueria"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/TlfPerruqueria4"
-                android:text="93-159-54-23"
+                android:layout_alignBottom="@+id/ImgPerruqueria4"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="28dp"
+                android:layout_toRightOf="@+id/ImgPerruqueria4"
+                android:src="@drawable/webico"/>
 
+            <ImageView
+                android:id="@+id/TlfPerruqueria4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_alignBaseline="@+id/LinkQuartaPerruqueria"
+
                 android:layout_alignBottom="@+id/LinkQuartaPerruqueria"
                 android:layout_alignLeft="@+id/TlfPerruqueria3"
-                android:layout_alignStart="@+id/TlfPerruqueria3" />
+                android:layout_alignStart="@+id/TlfPerruqueria3"
+                android:src="@drawable/tlfico" />
+
             <ImageView
-                android:layout_below="@+id/ImgPerruqueria4"
+                android:id="@+id/ImgPerruqueria5"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:id="@+id/ImgPerruqueria5"
-                android:layout_marginTop="20dp"
+                android:layout_below="@+id/NomPerruqueria4"
                 android:layout_marginLeft="20dp"
-                />
+                android:layout_marginTop="20dp"
+                android:src="@drawable/perru_raffel" />
+            <ImageView
+                android:id="@+id/pubi4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_alignBottom="@id/TlfPerruqueria4"
+                android:layout_toRightOf="@id/TlfPerruqueria4"
+                android:src="@drawable/icoubi"/>
             <TextView
+                android:id="@+id/NomPerruqueria5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:text="Mes que mascotes"
+                android:layout_below="@id/ImgPerruqueria5"
+                android:layout_alignLeft="@id/ImgPerruqueria5"/>
+
+            <ImageView
                 android:id="@+id/LinkCinquenaPerruqueria"
-                android:text="Més que Mascotes"
-
-                android:layout_marginBottom="30dp"
-                android:layout_alignBottom="@+id/ImgPerruqueria5"
-                android:layout_toRightOf="@+id/ImgPerruqueria5"
-                android:layout_toEndOf="@+id/ImgPerruqueria5"
-                android:layout_marginLeft="28dp"
-                android:layout_marginStart="28dp" />
-            <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:id="@+id/TlfPerruqueria5"
-                android:text="93-849-21-86"
+                android:layout_alignBottom="@+id/ImgPerruqueria5"
+                android:layout_marginBottom="15dp"
+                android:layout_marginLeft="28dp"
+                android:layout_toRightOf="@+id/ImgPerruqueria5"
+                android:src="@drawable/webico"/>
 
+            <ImageView
+                android:id="@+id/TlfPerruqueria5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:layout_alignBaseline="@+id/LinkCinquenaPerruqueria"
+
                 android:layout_alignBottom="@+id/LinkCinquenaPerruqueria"
                 android:layout_alignLeft="@+id/TlfPerruqueria4"
-                android:layout_alignStart="@+id/TlfPerruqueria4" />
+                android:layout_alignStart="@+id/TlfPerruqueria4"
+                android:src="@drawable/tlfico" />
+            <ImageView
+                android:id="@+id/pubi5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_alignBottom="@id/TlfPerruqueria5"
+                android:layout_toRightOf="@id/TlfPerruqueria5"
+                android:src="@drawable/icoubi"/>
         </RelativeLayout>
     </ScrollView>
 </FrameLayout>
