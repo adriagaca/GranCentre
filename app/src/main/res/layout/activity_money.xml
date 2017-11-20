@@ -21,10 +21,10 @@
         android:id="@+id/result"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignTop="@+id/n"
-
-        android:layout_marginLeft="40dp"
-        android:layout_toRightOf="@+id/n" />
+        android:layout_above="@+id/convertir"
+        android:layout_alignLeft="@+id/sp_desti"
+        android:layout_alignStart="@+id/sp_desti"
+        android:text="sdadaasdad" />
 
     <TextView
         android:id="@+id/titulo"
@@ -37,19 +37,22 @@
 
     <Spinner
         android:id="@+id/sp_ori"
-        android:layout_width="match_parent"
+        android:layout_width="400px"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/result"
-        android:layout_alignEnd="@+id/result"
 
-        android:layout_alignRight="@+id/result"
-        android:layout_marginRight="20dp" />
+        android:layout_above="@+id/n"
+        android:layout_marginBottom="7dp"
+        android:layout_toLeftOf="@+id/convertir"
+        android:layout_toStartOf="@+id/convertir" />
 
     <Spinner
         android:id="@+id/sp_desti"
-        android:layout_width="match_parent"
+        android:layout_width="400px"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/sp_ori"
+        android:layout_marginLeft="52dp"
+        android:layout_marginStart="52dp"
+        android:layout_toEndOf="@+id/sp_ori"
         android:layout_toRightOf="@+id/sp_ori" />
 
     <Button
