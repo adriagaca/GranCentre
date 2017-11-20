@@ -37,25 +37,11 @@ public class MainActivity extends Activity implements View.OnClickListener {
         hotels.setOnClickListener(this);
     }
 
-
-    public  void gotobusiness(View v){
-
-        Intent hola = new Intent(this,Business.class);
-        startActivity(hola);
-
-    }
-    public  void gotomovies(View v){
-
-        Intent intent = new Intent(this,Movies.class);
-        startActivity(intent);
-
-    }
-
     @Override
     public void onClick(View v) {
         if(v==restaurant)
         {
-            //Intent intent = new Intent(this,Restaurant.class); // nom del java dels restaurants
+            //Intent intent = new Intent(this,$$$$.class); // $$$$ =nom del java dels restaurants
             //startActivity(intent);
         }
         else if (v==business)
@@ -70,12 +56,12 @@ public class MainActivity extends Activity implements View.OnClickListener {
         }
         else if (v==weather)
         {
-            //Intent intent = new Intent(this,Weather.class); // nom del java del temps
+            //Intent intent = new Intent(this,$$$$.class); // $$$$ =nom del java del temps
             //startActivity(intent);
         }
         else if (v==events)
         {
-            //Intent intent = new Intent(this,Events.class); // nom del java dels events
+            //Intent intent = new Intent(this,$$$$.class); // $$$$ =nom del java dels events
             //startActivity(intent);
         }
         else if (v==hotels)
