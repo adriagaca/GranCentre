@@ -41,8 +41,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
     public void onClick(View v) {
         if(v==restaurant)
         {
-            //Intent intent = new Intent(this,$$$$.class); // $$$$ =nom del java dels restaurants
-            //startActivity(intent);
+            Intent intent = new Intent(this,Activity_Restaurant.class); // $$$$ =nom del java dels restaurants
+            startActivity(intent);
         }
         else if (v==business)
         {
