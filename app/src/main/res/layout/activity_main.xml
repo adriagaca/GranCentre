@@ -67,7 +67,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.19"
-            app:srcCompat="@drawable/events"
+            android:src="@drawable/events"
             android:layout_margin="10dp"/>
 
         <ImageView
@@ -75,7 +75,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.19"
-            app:srcCompat="@drawable/hotels"
+            android:src="@drawable/hotels"
             android:layout_margin="10dp"/>
     </LinearLayout>
 
