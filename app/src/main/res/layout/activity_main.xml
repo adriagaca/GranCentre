@@ -18,10 +18,9 @@
             android:id="@+id/imageView1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="0.19"
-            android:src="@drawable/restaurants"
             android:layout_margin="10dp"
-            android:onClick="gotoresta"/>
+            android:layout_weight="0.19"
+            android:src="@drawable/restaurants" />
 
         <ImageView
             android:id="@+id/imageView2"
@@ -46,8 +45,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="0.19"
-            android:src="@drawable/movies"
-            android:onClick="gotomovies"
+            app:srcCompat="@drawable/movies"
             android:layout_margin="10dp"/>
 
         <ImageView

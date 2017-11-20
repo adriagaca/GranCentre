@@ -1,63 +1,138 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_height="match_parent"
+    tools:context="com.example.adri.projectegithub.Hotel"
+    android:background="@color/fonsHotel"
+    android:orientation="vertical">
 
-    <LinearLayout
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal">
+    <Spinner
+        android:id="@+id/spinner2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical">
+            android:orientation="horizontal"
+            android:gravity="center">
+
             <ImageView
-                android:id="@+id/img_jabugo"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                android:id="@+id/img_jabugo_prueba_gps"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:src="@drawable/rest_el_celler_de_jabugo" />
+                app:srcCompat="@drawable/rest_el_celler_de_jabugo" />
 
-            <RatingBar
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1" />
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="vertical">
             <LinearLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="vertical">
 
-                <ImageButton
-                    android:id="@+id/web_jabugo"
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/webico" />
+                    android:layout_gravity="center">
 
-                <ImageButton
-                    android:id="@+id/tlf_jabugo"
+                    <ImageView
+                        android:id="@+id/web_jabugo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/webico"
+                        android:layout_margin="5dp"/>
+
+                    <ImageView
+                        android:id="@+id/tlf_jabugo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:layout_margin="5dp"
+                        app:srcCompat="@drawable/tlfico" />
+
+                    <TextView
+                        android:id="@+id/textView"
+                        android:layout_width="122dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0"
+                        android:text="0"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <RatingBar
+                    android:id="@+id/ratingBar_jabugo"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/tlfico" />
+                    android:layout_weight="1"
+                    android:isIndicator="false" />
 
             </LinearLayout>
-
-            <TextView
-                android:id="@+id/tx_valoracion"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Valoracion: 0"
-                android:textAppearance="@style/TextAppearance.AppCompat.Title" />
         </LinearLayout>
 
-    </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center">
 
+            <ImageView
+                android:id="@+id/img_"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                app:srcCompat="@drawable/rest_el_trull" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
+
+                    <ImageView
+                        android:id="@+id/web_eltrull"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        app:srcCompat="@drawable/webico"
+                        android:layout_margin="5dp"/>
+
+                    <ImageView
+                        android:id="@+id/tlf_eltrull"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:layout_margin="5dp"
+                        app:srcCompat="@drawable/tlfico" />
+
+                    <TextView
+                        android:id="@+id/tx_eltrull"
+                        android:layout_width="122dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="0"
+                        android:text="0"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Title"
+                        android:gravity="center"/>
+                </LinearLayout>
+
+                <RatingBar
+                    android:id="@+id/ratingBar_eltrull"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:isIndicator="false" />
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>
