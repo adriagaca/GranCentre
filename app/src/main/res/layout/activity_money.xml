@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.adri.projectegithub.activity_money">
+
+    <EditText
+        android:id="@+id/n"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:ems="3"
+
+        android:inputType="number"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="97dp" />
+
+    <TextView
+        android:id="@+id/result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/n"
+
+        android:layout_marginLeft="40dp"
+        android:layout_toRightOf="@+id/n" />
+
+    <TextView
+        android:id="@+id/titulo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="87dp"
+        android:text="Cambio de moneda" />
+
+    <Spinner
+        android:id="@+id/sp_ori"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/result"
+        android:layout_alignEnd="@+id/result"
+
+        android:layout_alignRight="@+id/result"
+        android:layout_marginRight="20dp" />
+
+    <Spinner
+        android:id="@+id/sp_desti"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/sp_ori"
+        android:layout_toRightOf="@+id/sp_ori" />
+
+    <Button
+        android:id="@+id/convertir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/n"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="68dp"
+        android:text="Convertir"
+        android:onClick="Convertir"/>
+
+</RelativeLayout>

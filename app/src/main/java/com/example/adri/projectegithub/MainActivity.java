@@ -16,7 +16,7 @@ public class MainActivity extends Activity implements View.OnClickListener {
     ImageView business;
     ImageView hotels;
     ImageView movies;
-    ImageView weather;
+    ImageView money;
     ImageView events;
 
     @Override
@@ -29,8 +29,8 @@ public class MainActivity extends Activity implements View.OnClickListener {
         business.setOnClickListener(this);
         movies =findViewById(R.id.imageView3);
         movies.setOnClickListener(this);
-        weather =findViewById(R.id.imageView4);
-        weather.setOnClickListener(this);
+        money =findViewById(R.id.imageView4);
+        money.setOnClickListener(this);
         events =findViewById(R.id.imageView5);
         events.setOnClickListener(this);
         hotels =findViewById(R.id.imageView6);
@@ -54,10 +54,10 @@ public class MainActivity extends Activity implements View.OnClickListener {
             Intent intent = new Intent(this,Movies.class);
             startActivity(intent);
         }
-        else if (v==weather)
+        else if (v==money)
         {
-            //Intent intent = new Intent(this,$$$$.class); // $$$$ =nom del java del temps
-            //startActivity(intent);
+            Intent intent = new Intent(this,activity_money.class); // $$$$ =nom del java del temps
+            startActivity(intent);
         }
         else if (v==events)
         {
